@@ -1,0 +1,110 @@
+@use 'variaveis';
+@use 'header';
+@use 'catalog';
+@use 'TextSection';
+@use 'faq';
+@use 'footer';
+
+
+@font-face {
+    font-family: NetflixSans ;
+    src: url(/assets/fonts/NetflixSans-Bold.woff2);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: NetflixSans;
+    src: url(/assets/fonts/NetflixSans-Regular.woff2);
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: NetflixSans, sans-serif;
+}
+
+body {
+    background-color: variaveis.$CorDeFundo;
+    font-family: 'Roboto', sans-serif;
+}
+
+@mixin text($fontSize: 24px) {
+    font-size: $fontSize;
+    color: variaveis.$CorTextoSecundario;
+}
+.text--medium {
+    @include text (20px);
+}
+.text {
+    @include text;
+}
+.text--titleDownload {
+    @include text(16px);
+    font-weight: 700;
+}
+
+.text--download{
+    @include text(14px);
+    color: blue;
+}
+
+@mixin title($fontSize: 48px){
+    @include text($fontSize);
+    color: variaveis.$CorTextoSecundario;
+}
+.title{
+    @include title;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 18px;
+    color: variaveis.$CorTextoSecundario;
+    background-color: variaveis.$corDeFundoBotaoPrimario;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    padding: 8px 16px;
+    font-weight: 700;
+    max-width: 138px;
+
+    &:hover {
+        background-color: darken(variaveis.$corDeFundoBotaoPrimario, 10%);
+    }
+    
+    &--small{
+        padding: 4px 16px;
+        font-size: 14px;
+    }
+}
+
+
+.language-selector {
+    display: flex;
+    align-items: center;
+
+    img {
+        height: 16px;
+        width: 16px;
+    }
+
+    select {
+        border: none;
+        color: variaveis.$CorTextoSecundario;
+        background-color: transparent;
+        padding: 4px;
+    }
+
+
+}
+
+
+
+

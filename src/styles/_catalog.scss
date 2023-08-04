@@ -1,0 +1,59 @@
+@use 'variaveis';
+
+.catalog {
+    min-height: 80vh;
+    background-image:linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%),url(../images/catalogo.jpg);
+    width: auto;
+    object-fit: cover;
+    text-align: center;
+    color: #fff;
+
+    &__content{
+        margin-top: 58px;
+        display: inline-block;
+        min-width: 528px;
+
+        h2{
+            margin-bottom: 20px;
+        }
+        h3 {
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+
+        &__form {
+            margin-top: 20px;
+            
+            label {
+                position: absolute;
+                z-index: 1;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                transition-property: top, font-size,line-height;
+                transition-duration: 250ms;
+                pointer-events: none;
+                transition-timing-function: cubic-bezier(0.9, 0, 0.51, 1);
+                color: rgba(255,255,255,0.7);
+                padding: 5px;
+                text-align: left;
+            }
+
+            input {
+
+            width: 480px;
+            height: 48px;
+            border: 1 solid #fff;
+            border-radius: 5px;
+            background-color: #00000081;
+            padding: 20px 16px 4px;
+            }
+
+            &__button {
+                margin: 16px;
+            }
+
+        }
+    }
+
+}

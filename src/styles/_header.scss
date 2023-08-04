@@ -1,0 +1,46 @@
+@use 'variaveis';
+
+.header {
+    top: 0;
+    left: 0;
+    
+
+    .language-selector {
+        display: flex;
+        align-items: center;
+    
+        img {
+            height: 16px;
+            width: 16px;
+        }
+    
+        select {
+            border: none;
+            color: variaveis.$CorTextoSecundario;
+            background-color: transparent;
+            padding: 4px;
+        }
+    }
+
+    &__container {
+        padding: 8px 36px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        max-width: 89px;
+        width: 100%;
+        margin: 5px;
+    }
+
+    &__links {
+        display: flex;
+        
+            &__item {
+                margin: 5px;
+            }
+    }
+}
+
+
