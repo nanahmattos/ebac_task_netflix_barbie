@@ -3,18 +3,18 @@
     &__call{
         color: white;
         padding-left: 7.6vw;
+        padding-top: 0.75rem;
         font-size: 16px;
     }
 
     &__container {
-        max-width: 1024px;
+        
         width: 100%;
         padding: 7.6vw;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         padding-top: 0.75rem;
         padding-bottom: 60px;
-        
         
     }
 

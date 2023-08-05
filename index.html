@@ -10,56 +10,69 @@
 <body>
     <header class="header">
         <div class="header__container">
-            <h1>
-                <img class="header__logo" src="./dist/images/netflix_logo.png" alt="logo da netflix">
-            </h1>
-            <ul class="header__links">
-                <li class="header__links__item">
-                    <div class="language-selector">
-                        <img src="./dist/images/globe.svg" alt="Icone globo">
-                        <select>
-                            <option>English</option>
-                            <option selected>Português</option>
-                        </select>
+            <div class="header__header">
+                <h1>
+                    <img class="header__header__logo" src="./dist/images/netflix_logo.png" alt="logo da netflix">
+                </h1>
+                <ul class="header__header__links">
+                    <li class="header__header__links__item">
+                        <div class="language-selector">
+                            <img src="./dist/images/globe.svg" alt="Icone globo">
+                            <select>
+                                <option>English</option>
+                                <option selected>Português</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li class="header__header__links__item">
+                        <a class="button button--small" href="#">Entrar</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header__catalog">
+                <div class="header__catalog__content">
+                    <h2 class="title">
+                        Filmes, séries e muito mais, sem limites
+                    </h2>
+                    <p class="text">
+                        Assista onde quiser, Cancele quando quiser. 
+                    </p>
+                    <div class="header__catalog__content__form">
+                        <form>
+                            <h3 class="text--medium">
+                                Quer assistir? Informe seu email para criar ou reiniciar sua assinatura. 
+                            </h3>
+                            <div class="form__email">
+                                <input type="Email" placeholder="Email">
+                                <button class="header__catalog__content__form__button button" type="submit">Vamos lá ></button>
+                            </div>
+                        </form>
                     </div>
-                </li>
-                <li class="header__links__item">
-                    <a class="button button--small" href="#">Entrar</a>
-                </li>
-            </ul>
+                </div>
+            </div>
+            <div class="header__popcorn">
+                <span class="header__popcorn__content">
+                    <div>
+                        <img class="header__popcorn__image" src="./dist/images/popcorn.png" alt="Pipoca rosa">
+                    </div>
+                    <div class="header__popcorn__text">
+                        <p class="text--medium">A Netflix que você adora por apenas R$18,90.</p>
+                        <p class="text--titleDownload header__popcorn__text--assine">Assine o plano padrão com anúncios.</p>
+                        <a href="#">Saiba mais ></a>
+                    </div>           
+                </span>
+            </div>
+            <section class="TvSection">
+                <div class="TvSection__text__container">
+                    <h2 class="title" >Aproveite na TV</h2>
+                    <p class="text textMargin">
+                        Assista em Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, aparelhos de Blue-ray e outros dispositivos.
+                    </p>
+                </div>
+                <img src="./dist/images/tv_pink.png" alt="TV pink da barbie">
+            </section>
         </div>
     </header>
-    <section class="catalog">
-        <div class="catalog__content">
-            <h2 class="title">
-                Filmes, séries e muito mais, sem limites
-            </h2>
-            <p class="text">
-                Assista onde quiser, Cancele quando quiser. 
-            </p>
-            <div class="catalog__content__form ">
-                <form >
-                    <h3 class="text">
-                        Quer assistir? Informe seu email para criar ou reiniciar sua assinatura. 
-                    </h3>
-                    <div>
-                        <label class="text" for="email">Email</label>
-                        <input type="Email">
-                        <button class="catalog__content__form__button button" type="submit">Vamos lá ></button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </section>
-    <section class="TvSection">
-        <div class="TvSection__text__container">
-            <h2 class="title" >Aproveite na TV</h2>
-            <p class="text textMargin">
-                Assista em Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, aparelhos de Blue-ray e outros dispositivos.
-            </p>
-        </div>
-        <img src="./dist/images/tv_pink.png" alt="TV pink da barbie">
-    </section>
     <div>
         <span class="forma">
         </span>
@@ -107,7 +120,7 @@
                 <p class="text--download">Download <br> 
                 em andamento...</p>
             </div class="MobileSection__container__item__icon">
-                <img id="icon" src="./dist/images/download.svg" alt="icone de download">
+                <img id="icon" src="./dist/images/download.png" alt="icone de download">
             </div>
         </div>
     </section>
@@ -128,82 +141,83 @@
             </li>
             <li class="faq__questions__item">
                 <div class="faq__questions__item__questions" data-faq-question>
-                    O que é a Netflix?
+                    Quanto custa a Netflix?
                 </div>
                 <div class="faq__questions__item__answer">
                     <br>
-                    <p class="text"> A Netflix é um serviço de streaming que oferece uma ampla variedade de séries, filmes e documentários premiados em milhares de aparelhos conectados à internet.
-                        Você pode assistir a quantos filmes e séries quiser, quando e onde quiser – tudo por um preço mensal acessível. Aqui você sempre encontra novidades. A cada semana, adicionamos novas séries e filmes.
+                    <p class="text"> 
+                        Assista à Netflix no seu celular, tablet, Smart TV, notebook ou aparelho de streaming por uma taxa mensal única. Os planos variam de R$18,90 a R$55,90 por mês. Sem contrato nem taxas extras.
                     </p>
                     <br>
                 </div>
             </li>
             <li class="faq__questions__item">
                 <div class="faq__questions__item__questions" data-faq-question>
-                    O que é a Netflix?
+                    Onde posso assistir?
                 </div>
                 <div class="faq__questions__item__answer">
                     <br>
-                    <p class="text"> A Netflix é um serviço de streaming que oferece uma ampla variedade de séries, filmes e documentários premiados em milhares de aparelhos conectados à internet.
-                        Você pode assistir a quantos filmes e séries quiser, quando e onde quiser – tudo por um preço mensal acessível. Aqui você sempre encontra novidades. A cada semana, adicionamos novas séries e filmes.
+                    <p class="text"> 
+                    Assista onde quiser, quando quiser. Faça login com sua conta Netflix em netflix.com para começar a assistir no computador ou em qualquer aparelho conectado à Internet compatível com o aplicativo Netflix, como Smart TVs, smartphones, tablets, aparelhos de streaming e videogames.
+                    Você também pode baixar a sua série favorita com o aplicativo Netflix para iOS, Android ou Windows 10. Use downloads para levar a Netflix para onde quiser sem precisar de conexão com a Internet. Leve a Netflix com você para qualquer lugar.
                     </p>
                     <br>
                 </div>
             </li>
             <li class="faq__questions__item">
                 <div class="faq__questions__item__questions" data-faq-question>
-                    O que é a Netflix?
+                    Como faço para cancelar?
                 </div>
                 <div class="faq__questions__item__answer">
                     <br>
-                    <p class="text"> A Netflix é um serviço de streaming que oferece uma ampla variedade de séries, filmes e documentários premiados em milhares de aparelhos conectados à internet.
-                        Você pode assistir a quantos filmes e séries quiser, quando e onde quiser – tudo por um preço mensal acessível. Aqui você sempre encontra novidades. A cada semana, adicionamos novas séries e filmes.
+                    <p class="text"> 
+                    A Netflix é flexível. Não há contratos nem compromissos. Você pode cancelar a sua conta na internet com apenas dois cliques. Não há taxa de cancelamento – você pode começar ou encerrar a sua assinatura a qualquer momento.
                     </p>
                     <br>
                 </div>
             </li>
             <li class="faq__questions__item">
                 <div class="faq__questions__item__questions" data-faq-question>
-                    O que é a Netflix?
+                    O que eu posso assistir na Netflix?
                 </div>
                 <div class="faq__questions__item__answer">
                     <br>
-                    <p class="text"> A Netflix é um serviço de streaming que oferece uma ampla variedade de séries, filmes e documentários premiados em milhares de aparelhos conectados à internet.
-                        Você pode assistir a quantos filmes e séries quiser, quando e onde quiser – tudo por um preço mensal acessível. Aqui você sempre encontra novidades. A cada semana, adicionamos novas séries e filmes.
+                    <p class="text"> 
+                    A Netflix tem um grande catálogo de filmes, documentários, séries, originais Netflix premiados e muito mais. Assista o quanto quiser, quando quiser.
                     </p>
                     <br>
                 </div>
             </li>
             <li class="faq__questions__item">
                 <div class="faq__questions__item__questions" data-faq-question>
-                    O que é a Netflix?
+                    A Netflix é adequada para crianças?
                 </div>
                 <div class="faq__questions__item__answer">
                     <br>
-                    <p class="text"> A Netflix é um serviço de streaming que oferece uma ampla variedade de séries, filmes e documentários premiados em milhares de aparelhos conectados à internet.
-                        Você pode assistir a quantos filmes e séries quiser, quando e onde quiser – tudo por um preço mensal acessível. Aqui você sempre encontra novidades. A cada semana, adicionamos novas séries e filmes.
+                    <p class="text"> 
+                        A experiência infantil da Netflix faz parte da sua assinatura para que as crianças se divirtam em seu próprio espaço com séries e filmes familiares sob a supervisão dos responsáveis.
+                        O recurso de controle parental, incluso nos perfis para crianças e protegido por PIN, permite restringir a classificação etária do conteúdo que as crianças podem ver e bloquear títulos específicos que você não quer que elas assistam.
                     </p>
                     <br>
                 </div>
             </li>
         </ul>
-        <div class="catalog__content__form ">
+        <div class="faq__form">
             <form >
-                <h3 class="text">
+                <h3 class="text--medium">
                     Quer assistir? Informe seu email para criar ou reiniciar sua assinatura. 
                 </h3>
-                <div>
-                    <label class="text" for="email">Email</label>
-                    <input type="Email">
-                    <button class="catalog__content__form__button button" type="submit">Vamos lá ></button>
+                <div class="faq__form--button form__email">
+                    <input type="Email" placeholder="Email">
+                    <button class="button" type="submit">Vamos lá ></button>
                 </div>
             </form>
         </div>
-        <div>
-            <span class="forma">
-            </span>
-        </div>
     </section>
+    <div>
+        <span class="forma">
+        </span>
+    </div>
     <footer class="footer">
         <div class="footer__call">
             <li class="footer__links__item">
