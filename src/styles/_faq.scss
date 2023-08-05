@@ -30,10 +30,10 @@
                 cursor: pointer;
                 position: relative;
 
-                //pseudo elementos "&::before &::after
+                
                 &::after {
-                    content: '+'; //desenho apresentado, tipo um span
-                    position: absolute; // ao inserir o abosolute é necessário adicionar o relative no elementos pai
+                    content: '+';
+                    position: absolute; 
                     top: 0;
                     right: 24px;
                     height: 100%;
@@ -45,7 +45,7 @@
 
             &__answer {
                 height: 0;
-                overflow:  hidden; //nao deixa o elemento visivel
+                overflow:  hidden; 
                 padding: 0 24px;
                 transition: height, .5s ease;
             }
