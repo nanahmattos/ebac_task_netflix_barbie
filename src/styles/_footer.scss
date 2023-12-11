@@ -1,38 +1,47 @@
 .footer {
-
-    &__call{
+    padding: 72px 112px;
+    margin: 0 48px;
+    &__call,&__rodape{
         color: white;
-        padding-left: 7.6vw;
         padding-top: 0.75rem;
         font-size: 16px;
+        margin: 10px 0;
     }
-
     &__container {
-        
         width: 100%;
-        padding: 7.6vw;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        padding-top: 0.75rem;
-        padding-bottom: 60px;
-        
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
+        gap: 20px;
     }
-
     &__links {
-        
         &__item {
         margin-top: 0.75rem;
-        margin-bottom: 0.75rem;
-
         a {
             color: white;
             font-size: 14px;
         }
         }
     }
-
     .netflix{
         color: white;
         font-size: 14px;
+    }
+
+    @media(max-width: 640px) {
+        padding: 0 24px;
+        margin: 32px 0;
+        &__container {
+        margin: 0;
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    &__links{
+            width: 100%;
+        }
+    }
+    @media only screen and (min-device-width: 650px) and (max-device-width: 1024px) {
+        padding: 0;
     }
 }

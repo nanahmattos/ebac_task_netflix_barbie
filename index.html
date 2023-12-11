@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,60 +10,60 @@
 <body>
     <header class="header">
         <div class="header__container">
-            <div class="header__header">
-                <h1>
-                    <img class="header__header__logo" src="./dist/images/netflix_logo.png" alt="logo da netflix">
-                </h1>
-                <ul class="header__header__links">
-                    <li class="header__header__links__item">
-                        <div class="language-selector">
-                            <img src="./dist/images/globe.svg" alt="Icone globo">
-                            <select>
-                                <option>English</option>
-                                <option selected>Português</option>
-                            </select>
-                        </div>
-                    </li>
-                    <li class="header__header__links__item">
-                        <a class="button button--small" href="#">Entrar</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="header__catalog">
-                <div class="header__catalog__content">
+            <img class="header__container__logo" src="./dist/images/netflix_logo.png" alt="logo da netflix">
+            <ul class="header__container__links">
+                <li class="header__container__links__item">
+                    <div class="language-selector">
+                        <img src="./dist/images/globe.svg" alt="Icone globo">
+                        <select>
+                            <option>English</option>
+                            <option selected>Português</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="header__container__links__item">
+                    <a class="button button--small" href="#">Entrar</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section class="divirta">
+        <div class="divirta__container">
+            <div class="divirta__catalog">
+                <div class="divirta__catalog__content">
                     <h2 class="title">
                         Filmes, séries e muito mais, sem limites
                     </h2>
-                    <p class="text">
+                    <p class="text--medium">
                         Assista onde quiser, Cancele quando quiser. 
                     </p>
-                    <div class="header__catalog__content__form">
+                    <div class="divirta__catalog__content__form">
                         <form>
-                            <h3 class="text--medium">
+                            <p class="text--medium">
                                 Quer assistir? Informe seu email para criar ou reiniciar sua assinatura. 
-                            </h3>
+                            </p>
                             <div class="form__email">
-                                <input type="Email" placeholder="Email">
-                                <button class="header__catalog__content__form__button button" type="submit">Vamos lá ></button>
+                                    <input type="Email" placeholder="Email">
+                                    <button class="form__catalog__content__form__button button" type="submit">Vamos lá ></button>
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
-            <div class="header__popcorn">
-                <span class="header__popcorn__content">
-                    <div>
-                        <img class="header__popcorn__image" src="./dist/images/popcorn.png" alt="Pipoca rosa">
-                    </div>
-                    <div class="header__popcorn__text">
-                        <p class="text--medium">A Netflix que você adora por apenas R$18,90.</p>
-                        <p class="text--titleDownload header__popcorn__text--assine">Assine o plano padrão com anúncios.</p>
-                        <a href="#">Saiba mais ></a>
-                    </div>           
-                </span>
-            </div>
         </div>
-    </header>
+    <div class="popcorn">
+        <span class="popcorn__content">
+            <div class="popcorn__item">
+                <img class="popcorn__image" src="./dist/images/popcorn.png" alt="Pipoca rosa">
+            </div>
+            <div class="popcorn__text">
+                <p class="text--medium">A Netflix que você adora por apenas R$18,90.</p>
+                <p class="text--titleDownload popcorn__text--assine">Assine o plano padrão com anúncios.</p>
+                <a href="#">Saiba mais ></a>
+            </div>           
+        </span>
+    </div>
+    </section>
     <section class="TvSection">
         <div class="TvSection__text__container">
             <h2 class="title" >Aproveite na TV</h2>
@@ -71,14 +71,18 @@
                 Assista em Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, aparelhos de Blue-ray e outros dispositivos.
             </p>
         </div>
-        <img src="./dist/images/tv_pink.png" alt="TV pink da barbie">
+        <div class="ProfileSection__container--ProfileImage">
+            <img src="./dist/images/tv_pink.png" alt="TV pink da barbie">
+        </div>
     </section>
     <div>
         <span class="forma">
         </span>
     </div>
     <section class="DevicesSection">
-        <img src="./dist/images/device-pile.png" alt="Devices">
+        <div class="ProfileSection__container--ProfileImage">
+            <img src="./dist/images/device-pile.png" alt="Devices">
+        </div>
         <div class="DevicesSection__text__container">
             <h2 class="title" >Assista onde quiser</h2>
             <p class="text textMargin">
@@ -97,31 +101,34 @@
                 Deixe as crianças se aventurarem com seus personagens favoritos em espaço feito só para elas, sem pagar a mais por isso.
             </p>
         </div>
-        <img class="ProfileSection__container--ProfileImage" src="./dist/images/profile_netflix.png" alt="Seu perfil na Netflix">
+        <div class="ProfileSection__container--ProfileImage">
+            <img src="./dist/images/profile_netflix.png" alt="Seu perfil na Netflix">
+        </div>
     </section>
     <div>
         <span class="forma">
         </span>
     </div>
     <section class="MobileSection">
-        <img src="./dist/images/mobile.png" alt="Versão Mobile">
+        <div class="MobileSection__container--ProfileImage">
+            <img class="MobileSection__image" src="./dist/images/mobile.png" alt="Versão Mobile">
+            <div class="MobileSection__container">
+                <div class="MobileSection__container__text">
+                    <img src="./dist/images/capa_barbie.jpg" alt="capa filme da barbie">
+                    <div>
+                    <p class="text--titleDownload">Barbie</p>
+                    <p class="text--download">Download em andamento...</p>
+                    </div>
+                </div class="MobileSection__container__item__icon">
+                    <img id="icon" src="./dist/images/download.png" alt="icone de download">
+                </div>
+            </div>
+        </div>
         <div class="MobileSection__text__container">
-            <h2 class="title" >Baixe séries para assistir offline</h2>
+            <h2 class="title" >Baixe séries para <br/>assistir offline</h2>
             <p class="text textMargin">
                 Disponíveis somente em planos sem anúncios.
             </p>
-        </div>
-        <div class="MobileSection__container">
-            <div>
-                <img src="./dist/images/capa_barbie.jpg" alt="capa filme da barbie">
-            </div>
-            <div class="MobileSection__container__text">
-                <p class="text--titleDownload">Barbie</p>
-                <p class="text--download">Download <br> 
-                em andamento...</p>
-            </div class="MobileSection__container__item__icon">
-                <img id="icon" src="./dist/images/download.png" alt="icone de download">
-            </div>
         </div>
     </section>
     <section class="faq">
@@ -219,32 +226,83 @@
         </span>
     </div>
     <footer class="footer">
-        <div class="footer__call">
-            <li class="footer__links__item">
-                Dúvidas? Ligue <a href="#">0800 000 000</a>
-            </li>
-        </div>
-        <div class="footer__container">
-            <div>
-                <ul class="footer__links">
-                    <li class="footer__links__item">
-                        <a href="#">Perguntas frequentes</a>
-                    </li>
-                    <li class="footer__links__item">
-                        <a href="#">Media Center</a>
-                    </li>
-                    <li class="footer__links__item">
-                        <a href="#">Resgatar cartão pré-pago</a>
-                    </li>
-                    <li class="footer__links__item">
-                        <a href="#">Termos de Uso</a>
-                    </li>
-                    <li class="footer__links__item">
-                        <a href="#">Informações corporativas</a>
-                    </li>
-                    <li class="footer__links__item">
-                        <a href="#">Avisos legais</a>
-                    </li>
+        <div>
+
+            <div class="footer__call">
+                <li class="footer__links__item">
+                    Dúvidas? Ligue <a href="#">0800 000 000</a>
+                </li>
+            </div>
+            <div class="footer__container">
+                <div>
+                    <ul class="footer__links">
+                        <li class="footer__links__item">
+                            <a href="#">Perguntas frequentes</a>
+                        </li>
+                        <li class="footer__links__item">
+                            <a href="#">Relações com investidores</a>
+                        </li>
+                        <li class="footer__links__item">
+                            <a href="#">Formas de assistir</a>
+                        </li>
+                        <li class="footer__links__item">
+                            <a href="#">Informações corporativas</a>
+                        </li>
+                        <li class="footer__links__item">
+                            <a href="#">Só na Netflix</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="footer__links">
+                        <li class="footer__links__item">
+                            <a href="#">Central de Ajuda</a>
+                        </li>
+                        <li class="footer__links__item">
+                            <a href="#">Carreiras</a>
+                        </li>
+                        <li class="footer__links__item">
+                            <a href="#">Termos de Uso</a>
+                        </li>
+                        <li class="footer__links__item">
+                            <a href="#">Entre em contato</a>
+                        </li>
+                    </ul>
+                </div>
+                <div >
+                    <ul class="footer__links">
+                        <li class="footer__links__item">
+                            <a href="#">Conta</a>
+                        </li>
+                        <li class="footer__links__item">
+                            <a href="#">Resgatar cartão pré-pago</a>
+                        </li>
+                        <li class="footer__links__item">
+                            <a href="#">Privacidade</a>
+                        </li>
+                        <li class="footer__links__item">
+                            <a href="#">Teste de velocidade</a>
+                        </li>
+                    </ul>
+                </div>
+                <div >
+                    <ul class="footer__links">
+                        <li class="footer__links__item">
+                            <a href="#">Media Center</a>
+                        </li>
+                        <li class="footer__links__item">
+                            <a href="#">Comprar cartão pré-pago</a>
+                        </li>
+                        <li class="footer__links__item">
+                            <a href="#">Preferência de cookies</a>
+                        </li>
+                        <li class="footer__links__item">
+                            <a href="#">Avisos legais</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__rodape">
                     <li class="footer__links__item">
                         <div class="language-selector">
                             <img src="./dist/images/globe.svg" alt="globo do mundo">
@@ -255,52 +313,9 @@
                         </div>
                     </li>
                     <p class="netflix">Netflix Brasil</p>
-                </ul>
-            </div>
-            <div>
-                <ul class="footer__links">
-                    <li class="footer__links__item">
-                        <a href="#">Central de Ajuda</a>
-                    </li>
-                    <li class="footer__links__item">
-                        <a href="#">Relações com investidores</a>
-                    </li>
-                    <li class="footer__links__item">
-                        <a href="#">Comprar cartão pré-pago</a>
-                    </li>
-                    <li class="footer__links__item">
-                        <a href="#">Privacidade</a>
-                    </li>
-                    <li class="footer__links__item">
-                        <a href="#">Entre em contato</a>
-                    </li>
-                    <li class="footer__links__item">
-                        <a href="#">Só na Netflix</a>
-                    </li>
-                </ul>
-            </div>
-            <div >
-                <ul class="footer__links">
-                    <li class="footer__links__item">
-                        <a href="#">Conta</a>
-                    </li>
-                    <li class="footer__links__item">
-                        <a href="#">Carreiras</a>
-                    </li>
-                    <li class="footer__links__item">
-                        <a href="#">Formas de assistir</a>
-                    </li>
-                    <li class="footer__links__item">
-                        <a href="#">Preferências de cookies</a>
-                    </li>
-                    <li class="footer__links__item">
-                        <a href="#">Teste de velocidade</a>
-                    </li>
-                </ul>
             </div>
         </div>
     </footer>
-
     <script src="./dist/js/main.js"></script>
 </body>
 </html>
